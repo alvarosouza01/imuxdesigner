@@ -1,0 +1,35 @@
+{
+  "name": "imuxdesigner",
+  "version": "1.0.0",
+  "description": "A statics portfolio web project",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./main.css -o ./assets/css/style.css",
+    "watch": "tailwindcss -i ./main.css -o ./assets/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarosouza01/imuxdesigner.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "ux",
+    "designer"
+  ],
+  "author": "zakirweb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvarosouza01/imuxdesigner/issues"
+  },
+  "homepage": "https://github.com/alvarosouza01/imuxdesigner#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "firebase-tools": "^12.7.0",
+    "flowbite": "^1.8.1"
+  }
+}

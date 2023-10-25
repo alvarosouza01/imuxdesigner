@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, 'Roboto', sans-serif, 'Atyp Display',
+      Proxima Nova, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans - serif;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  button:empty,
+  li:empty,
+  ul:empty,
+  h1:empty,
+  h2:empty,
+  h3:empty,
+  h4:empty,
+  h5:empty,
+  h6:empty {
+    display: none !important;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans - serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #2b2b2b33;
+    @screen sm {
+      font-size: 1.25rem; /* Adjust font size for small screens */
+    }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  p {
+    font-family: 'Roboto', sans - serif;
+  }
+  .testimonials-slides-box
+    .testimonials-slides-item:nth-child(1)
+    .testimonials-content
+    .testi-desc {
+    max-width: 380px;
+  }
+  .testimonials-slides-box
+    .testimonials-slides-item:not(:first-child)
+    .testimonials-content
+    .testi-desc {
+    max-width: 466px;
+  }
+  .button.price-plane-btn:hover svg path {
+    fill: #ffffff !important;
+    color: #ffffff !important;
+  }
+  .modal-image-box {
+    position: relative;
+    z-index: 3;
+  }
+  .modal-image-box .shape-modal-img.right-img-shape {
+    right: -285px;
+    z-index: -1;
+    bottom: -55px;
+    @screen sm {
+      right: -100px; /* Adjust position for small screens */
+    }
+  }
+  .modal-image-box .shape-modal-img.left-img-shape {
+    left: -278px;
+    z-index: -1;
+    top: -55px;
+    @screen sm {
+      left: -100px; /* Adjust position for small screens */
+    }
+  }
+  .banner-modal-shape-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    -webkit-mask-image: url('/assets/image/Vector1.svg');
+    mask-image: url('/assets/image/Vector1.svg');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+  }
+  .priching-card-item:first-child button:hover svg path {
+    fill: #ffffff;
+  }
+  .banner-buble-elips {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  .banner-buble-elips .bubble-elips {
+    position: absolute;
+    border-radius: 100%;
+    z-index: 9999;
+  }
+  .banner-buble-elips .bubble-elips:nth-child(1) {
+    width: 149px;
+    height: 149px;
+    background-color: #5226e4;
+    top: 118px;
+  }
+  .banner-buble-elips .bubble-elips:nth-child(2) {
+    width: 23px;
+    height: 23px;
+    background-color: #e0f2fe;
+    top: 37px;
+    right: 87px;
+    z-index: 0;
+  }
+  .banner-buble-elips .bubble-elips:nth-child(3) {
+    width: 74px;
+    height: 74px;
+    background-color: #4eebff;
+    top: 239px;
+    right: -34px;
+  }
+  .banner-buble-elips .bubble-elips:nth-child(4) {
+    width: 70px;
+    height: 70px;
+    background-color: #e2e6ea;
+    bottom: 0;
+    right: 40px;
+  }
+  .features-bubles-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .features-bubles-box .bubles-clip-item {
+    border-radius: 100%;
+    flex-shrink: 0;
+    background-color: #5226e4;
+    position: absolute;
+  }
+  .features-bubles-box .bubles-clip-item:nth-child(1) {
+    width: 154px;
+    height: 154px;
+    right: -71px;
+  }
+.features-bubles-box .bubles-clip-item:nth-child(2) {
+	width: 148px;
+	height: 148px;
+	z-index: 999;
+	bottom: calc(87px + 80px);
+	right: 0;
+}
+
+.advantage-bubbles-box .bubbles-items {
+  border-radius: 100%;
+  position: absolute;
+}
+.advantage-bubbles-box .bubbles-items:nth-child(1) {
+	width: 80px;
+	height: 80px;
+	background-color: #2B2B2B;
+	z-index: 5;
+	top: 34px;
+	left: 63px;
+}
+.advantage-bubbles-box .bubbles-items:nth-child(2) {
+	width: 99px;
+	height: 99px;
+	background: #4EEBFF;
+	/* z-index: ; */
+	left: -44px;
+	bottom: 345px;
+}
+
+}
+
+@layer components {
+  .custom-container-fluid {
+    @apply max-w-[1440px] w-full ml-auto mr-auto pl-[51px] pr-[51px] md:px-4;
+  }
+  .custom-container {
+    @apply container lg:container md:container xl:px-[75px] laptop-m:px-[80px] lg:px-[60px]  md:px-[40px] sm:px-4;
+  }
+
+  /* .primary-button {
+    @apply px-6 py-4 h-[49px] flex items-center justify-center rounded-full uppercase text-neu-black font-semibold text-[14px] leading-normal tracking-[1.96px] bg-secondary border-2 border-secondary hover:bg-transparent hover:text-white;
+  }
+  .primary-button-light {
+    @apply px-6 py-4 h-[49px] flex items-center justify-center rounded-full uppercase text-neu-black font-semibold text-[14px] leading-normal tracking-[1.96px] bg-secondary border-2 border-secondary hover:bg-transparent hover:text-white;
+  }
+  .secondary-button {
+    @apply w-[124px] h-[124px] md:w-[100px] md:h-[100px] sm:w-[100px] sm:h-[100px] px-[9px] rounded-full text-text-extra-small flex items-center justify-center font-bold leading-normal tracking-[.192px] uppercase font-secondary  transition-all duration-150 ease-out;
+  } */
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+/* Add this to your CSS */
+.hamburger-menu {
+  display: block;
+  cursor: pointer;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  margin: 6px 0;
+}
+
+/* Style for mobile menu (you can customize this) */
+#mobile-menu {
+  background: white;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+
+
