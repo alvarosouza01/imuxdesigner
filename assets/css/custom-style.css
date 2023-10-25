@@ -1,0 +1,84 @@
+/* CSS for hiding and showing mobile menu */
+#menu-toggle:checked + .hamburger-menu + #mobile-menu {
+    display: block; /* Show the mobile menu when the checkbox is checked (icon clicked) */
+}
+
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin: 6px 0;
+}
+
+#mobile-menu {
+    display: none; /* Hide the mobile menu initially */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%; /* Adjust this value as needed */
+}
+
+.header-buttons {
+    z-index: 1; /* Ensure the header is above the mobile menu */
+}
+
+/* Media query to show/hide elements based on screen width */
+@media (max-width: 640px) {
+    .desktop-buttons {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+#close-menu{
+    margin-top: 50%;
+}
+
+
+/* Enable horizontal scroll on mobile */
+@media (max-width: 768px) {
+    .testimonials-slides-box {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+    }
+    
+    .testimonials-slides-item {
+        flex: 0 0 auto;
+        width: 100%;
+        scroll-snap-align: start;
+    }
+}
+
+/* Disable horizontal scroll on larger screens */
+@media (min-width: 769px) {
+    .testimonials-slides-box {
+        overflow-x: hidden;
+    }
+}
+
+
+
